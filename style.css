@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    width: 1920px;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-list li {
+    list-style: none;
+    padding: 29px 21px;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-list li a {
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    justify-content: center;
+  }
+  .right-nav {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: right;
+    margin-right: 20px;
+  }
+  .left-nav input {
+    position: relative;
+    width: 240px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 16px;
+    outline: 0;
+    padding: 0 28px 0 0px;
+    border-radius: 0;
+    background: none;
+    -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -o-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+    margin-right: 150px;
+    margin-top: 17px;
+  }
+  
+  .subscribe-btn {
+    font-size: 14px;
+    margin-right: 35px;
+    font-weight: 500;
+    color: black;
+    padding: 15px 18px 15px;
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    background: yellow;
+    border: none;
+    outline: 0;
+    outline-color: transparent;
+    position: relative;
+    outline: none !important;
+    font-size: 12px;
+    margin: 17px 0 19px 20px;
+    padding: 0 12px;
+    letter-spacing: 0.4px;
+    font-weight: 700;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 4px;
+    margin-right: 14px;
+  }
+
+  .subscribe-btn2 {
+    font-size: 14px;
+    margin-right: 35px;
+    font-weight: 500;
+    color: white;
+    padding: 15px 18px 15px;
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    background: black;
+    border: none;
+    outline: 0;
+    outline-color: transparent;
+    position: relative;
+    outline: none !important;
+    font-size: 12px;
+    margin: 17px 0 19px 20px;
+    padding: 0 12px;
+    letter-spacing: 0.4px;
+    font-weight: 700;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 4px;
+    margin-right: 14px;
+  }
+  
+  .icon {
+    height: 25px;
+  }
+
+  
+  .nav-link:hover {
+    filter: brightness(300%);
+    filter: drop-shadow(0px 0px 20px white);
+  }
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+
+.container{
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container h1{
+    margin: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    width: 32%;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img{
+
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100%);
+    box-shadow: 0 0 20px #333;
+    object-fit: cover;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 10px #333);
+    transition: 0.3s;
+}
+
+.card img:hover{
+    filter: grayscale(0%);
+}
+
+.card figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    width: 100%;
+    height: 20%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0;
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0));
+    transition: 0.3s;
+}
+
+.card:hover figcaption{
+    opacity: 1;
+    transform: scale(1.03);
+}
